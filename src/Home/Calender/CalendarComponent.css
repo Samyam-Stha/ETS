@@ -1,0 +1,77 @@
+/* Container for the calendar */
+.calendar-container {
+  padding: 10px;
+  background: transparent; /* Keep background transparent for the container */
+  border-radius: 5px; /* Optional: Add some rounded corners */
+  margin-top: auto; /* Push calendar to the bottom */
+  width: 100%; /* Ensure full width of the sidebar */
+  max-width: 300px; /* Adjust the maximum width of the calendar */
+  margin: 0 auto; /* Center the calendar horizontally */
+}
+
+/* Styles for the calendar itself */
+.react-calendar {
+  border: none; /* Remove the border around the calendar */
+  background: transparent; /* Ensure the calendar background is transparent */
+  color: #fff; /* Set the font color to white */
+  font-size: 0.8rem; /* Reduce the font size for smaller text */
+}
+
+/* Styles for navigation buttons (prev/next month) */
+.react-calendar__navigation button {
+  color: #fff; /* Set the navigation button font color to white */
+  background: transparent; /* Ensure navigation buttons have a transparent background */
+  font-size: 0.8rem; /* Reduce font size for buttons */
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: red;
+}
+
+/* Styles for the month header */
+.react-calendar__navigation__label {
+  margin-bottom: 0; /* Remove bottom margin from month header */
+  padding-bottom: 5px; /* Add padding at the bottom of the month header */
+}
+
+/* Styles for days of the week header */
+.react-calendar__month-view__weekdays {
+  margin-top: 0; /* Remove top margin from days of the week header */
+  padding-top: 0; /* Remove padding at the top of the days of the week header */
+}
+
+/* Styles for individual calendar tiles (days) */
+.react-calendar__tile {
+  color: #fff; /* Set the tile font color to white */
+  font-size: 0.8rem; /* Reduce the font size for day tiles */
+  height: 30px; /* Adjust the height of day tiles */
+  width: 30px; /* Adjust the width of day tiles */
+  border-radius: 50%; /* Ensure tiles are circular */
+  padding-bottom: 22px;
+}
+
+/* Styles for the active tile (selected date) */
+.react-calendar__tile--active {
+  background: #1e90ff; /* Blue background color for active tile */
+  color: #fff; /* Text color for active tile */
+  border-radius: 50%; /* Rounded corners for the active tile */
+}
+
+/* Styles for the tile corresponding to the current date */
+.react-calendar__tile--now {
+  background: red; /* Blue background color for today's date */
+  color: #fff; /* Text color for today's date */
+  border-radius: 50%; /* Perfect circle for today's date */
+  border: 2px solid #fff; /* Optional: Add a white border around the circle */
+}
+
+/* Remove underlines from any links inside the calendar */
+.react-calendar a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  color: black;
+  background-color: #e6e6e6;
+}
